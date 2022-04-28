@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora-Imc</title>
+</head>
+<body>
+    <h1>
+        Seu Peso <span>Esta Normal?</span>
+    </h1>
+
+    <div id="container">
+
+        
+        <label for="input-altura">Altura</label>
+        <input 
+        type="number" 
+        min="0"
+        name="" 
+        id="input-altura" 
+        placeholder="Ex: 165">
+
+        <label for="input-peso">Peso</label>
+        <input 
+        type="number" 
+        name="" 
+        min="0"
+        id="input-peso" 
+        placeholder="Ex: 40">
+
+        <button id="button-analisar" onclick="verificar_inputs()">
+             <p>Calcular</p>
+            </button>
+            
+            <div class="container-resultado">
+                <button id="button-resultado">
+                    <p id="resultado"></p>
+                </button>
+            </div>
+
+    </div>
+    
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
